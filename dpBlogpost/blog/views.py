@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 from .admin import EntryAdmin
-from django.contrib.auth.mixins import LoginRequiredMixinm, UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import (
     ListView,
     DetailView,
