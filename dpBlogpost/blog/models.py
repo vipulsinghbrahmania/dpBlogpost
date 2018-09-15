@@ -12,7 +12,7 @@ class EntryQuerySet(models.QuerySet):
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
-    slug = models.SlugField(max_length=200, unique=True)
+    # slug = models.SlugField(max_length=200, unique=True)
     publish = models.BooleanField(default=True)
     date_created = models.DateTimeField(default=timezone.now)
     date_modified = models.DateTimeField(auto_now=True)
