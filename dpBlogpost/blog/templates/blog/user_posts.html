@@ -1,5 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
+    <small class="text-muted">{{ view.kwargs.username }} has posted {{ page_obj.paginator.count }} posts</small>
     {% for post in posts %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
